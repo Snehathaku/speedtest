@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Tester - Practice</title>
+ 
+  <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="test.html">Test</a></li>
+
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Dark Mode</button>
+  </header>
+  <main>
+    <section class="practice">
+      <h2>Practice Typing</h2>
+      <div id="practice-text">Click "Start Practice" to begin.</div>
+      <textarea id="practice-input" placeholder="Start typing here..." disabled></textarea>
+      <div class="stats">
+        <div id="timer">Time: 60s</div>
+        <div id="wpm">WPM: 0</div>
+        <div id="accuracy">Accuracy: 0%</div>
+      </div>
+      <button id="start-practice-btn">Start Practice</button>
+      <button id="restart-practice-btn" disabled>Restart</button>
+    </section>
+  </main>
+  <script src="home.js"></script>
+  <script src="practice.js"></script>
+</body>
+</html>

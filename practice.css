@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #3c8ff4;
+    --secondary-color: #0e51cc;
+    --background-light: #f4f4f4;
+    --background-dark: #1e1e1e;
+    --text-light: #333;
+    --text-dark: #fff;
+    --gradient: linear-gradient(135deg, #5c0bf2, #1795f6);
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-light);
+    color: var(--text-light);
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  
+  body.dark-mode {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  header {
+    background: var(--background-dark);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  #theme-toggle {
+    padding: 20px 10px;
+    background: var(--primary-color);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: block;
+    text-align: right;
+    margin-left: auto; 
+  }
+  
+  #theme-toggle:hover {
+    transform: scale(1.1);
+    background: var(--secondary-color);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .practice {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    .practice h2 {
+      font-size: 2.5rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: slideIn 1s ease-in-out;
+    }
+  
+    #practice-text {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      padding: 20px;
+      background: var(--background-dark);
+      color: var(--text-dark);
+      border-radius: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    #practice-input {
+      width: 80%;
+      height: 150px;
+      padding: 10px;
+      font-size: 1.2rem;
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      transition: border-color 0.3s ease;
+      margin: 20px 0;
+    }
+  
+    #practice-input:focus {
+      border-color: var(--secondary-color);
+    }
+  .stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+  
+    .stats div {
+      font-size: 1.2rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background: var(--gradient);
+      color: var(--text-dark);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin: 10px;
+    }
+  
+    button:hover {
+      transform: scale(1.1);
+      background: var(--secondary-color);
+    }
+  
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  
+  
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  
+    @keyframes slideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }

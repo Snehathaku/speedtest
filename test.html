@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="theme-toggle">
+            <button id="theme-btn">🌙 Dark Mode</button>
+            <nav>
+                <button class="nav-links">
+                  <a href="home.html">Back To Home</a>
+                </button></nav>
+
+        </div>
+
+
+
+
+        <h1>Typing Speed Test</h1>
+        <div class="name-input">
+            <input type="text" id="participant-name" placeholder="Enter your name">
+        </div>
+        <div class="test-area">
+            <p id="random-text">Click "Start Test" to begin.</p>
+            <textarea id="user-input" placeholder="Start typing here..." disabled></textarea>
+        </div>
+        <div class="controls">
+            <button id="start-btn">Start Test</button>
+            <button id="end-btn" disabled>End Test</button>
+            <button id="reset-btn" disabled>Reset</button>
+        </div>
+        <div class="results">
+            <p>Time: <span id="timer">0</span>s</p>
+            <p>Speed: <span id="speed">0</span> WPM</p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+        <div class="winners">
+            <h2>Top 3 Winners</h2>
+            <ul id="winner-list"></ul>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

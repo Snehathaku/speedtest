@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="contact.js"></script>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="anim.jpg" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h2>CONTACT FORM</h2>
+        <p class="subtitle">If you have any query, feel free to ask us anything!</p>
+
+        <form id="contactForm">
+            <label for="name">Your Name<span></span></label>
+            <input type="text" id="name" placeholder="Write your name" required>
+
+            <label for="email">Email<span></span></label>
+            <input type="email" id="email" placeholder="Write your email here" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Write your subject here">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Write your phone number here">
+
+            <label for="message">Your Message<span>*</span></label>
+            <textarea id="message" placeholder="Write your message here!" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+
+</body>
+</html>
